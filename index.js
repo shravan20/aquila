@@ -4,8 +4,8 @@ async function run() {
     try {
         const content = "Hello World";
         let readmeContent = fs.readFileSync('README.md', 'utf8');
-        readmeContent += `\n\n${content}\n`;
-
+        readmeContent += `\n\n Hello World \n`;
+        console.log("Inside run()");
         fs.writeFileSync('README.md', readmeContent);
     } catch (error) {
         console.error('Error updating README:', error.message);
