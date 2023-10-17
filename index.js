@@ -2,7 +2,7 @@ const fs = require('fs');
 
 async function run() {
     try {
-        const content = process.env.INPUT_CONTENT;
+        const content = "Hello World";
         let readmeContent = fs.readFileSync('README.md', 'utf8');
         readmeContent += `\n\n${content}\n`;
 
