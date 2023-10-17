@@ -1,9 +1,5 @@
 name: Update README
 description: Add custom content to README on every commit or merge
-inputs:
-  content:
-    description: "The content to add to the README"
-    required: true
 runs:
   using: "node12"
   main: "index.js"
